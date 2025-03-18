@@ -57,7 +57,7 @@
       </HBox>
    </bottom>
    <top>
-      <Label prefHeight="17.0" prefWidth="539.0" text="Welcome to my Weather Analizer Application" textFill="WHITE" BorderPane.alignment="CENTER">
+      <Label prefHeight="17.0" prefWidth="539.0" text="Welcome to my Weather Analyzer Application" textFill="WHITE" BorderPane.alignment="CENTER">
          <font>
             <Font size="26.0" />
          </font>

@@ -151,7 +151,7 @@ public class weatherAnalyticsController {
         }
         nextMonthButton.setText("Next Month: " + currentMonth.next());
         previousMonthButton.setText("Previous Month: " + currentMonth.previous());
-        averageTemperatureLabel.setText("Average temperature is: " + String.format("%.3f", data.avgTemperature));
+        averageTemperatureLabel.setText("Average temperature is: " + String.format("%.3f", data.avgTemperature) + " °F");
         numberOfRainyDaysLabel.setText("The number of rainy days is: " + data.daysRained);
     }
     /// Method to switch the current month to the next on button click,
