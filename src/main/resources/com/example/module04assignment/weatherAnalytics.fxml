@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.module04assignment.weatherAnalyticsController">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <HBox prefHeight="239.0" prefWidth="1270.0">
+                     <children>
+                        <HBox prefHeight="239.0" prefWidth="734.0">
+                           <children>
+                              <Label text="Average temperature">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="239.0" prefWidth="364.0" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/pngimg.com%20-%20thermometer_PNG51.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="65.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="averageTemperatureLabel" prefHeight="115.0" prefWidth="445.0" text="Average temperature is:">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="239.0" prefWidth="1270.0">
+                     <children>
+                        <HBox prefHeight="239.0" prefWidth="734.0">
+                           <children>
+                              <Label prefHeight="58.0" prefWidth="583.0" text="Is it cold, warm or hot today?">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="239.0" prefWidth="364.0" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fx:id="tempStatusImage" fitHeight="131.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="tempStatusLabel" prefHeight="73.0" prefWidth="363.0" text="The temperature is considered:">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="239.0" prefWidth="1270.0">
+                     <children>
+                        <HBox prefHeight="239.0" prefWidth="734.0">
+                           <children>
+                              <Label prefHeight="58.0" prefWidth="437.0" text="amount of rainy days:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="239.0" prefWidth="364.0" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/7038403.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="numberOfRainyDaysLabel" prefHeight="54.0" prefWidth="340.0" text="The number of rainy days is:">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="previousMonthButton" mnemonicParsing="false" onAction="#goPreviousMonth" prefHeight="100.0" prefWidth="216.0" text="Previous Month:" />
+            <Label fx:id="currentMonthLabel" prefHeight="100.0" prefWidth="881.0" text="Here is the data for:">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Label>
+            <Button fx:id="nextMonthButton" mnemonicParsing="false" onAction="#goNextMonth" prefHeight="100.0" prefWidth="216.0" text="Next Month:" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
